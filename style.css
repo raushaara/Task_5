@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(5, 1, 22);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 20px; 
+    width: auto;
+    padding: 20px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    background-color: #4c68e6;
+    color: #dfc1c1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
